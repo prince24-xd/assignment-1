@@ -6,6 +6,12 @@
 body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  background-color: #F2EDED;
+}
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+  background-color: #F2EDED;
 }
 /* common-style  */
 .btnStyle {
@@ -67,8 +73,6 @@ body {
 }
 /* sction-section */
 .actionSection {
-  max-width: 1140px;
-  margin: 0 auto;
   max-height: 330px;
   display: flex;
   justify-content: space-between;
@@ -90,9 +94,95 @@ body {
   font-weight: normal;
   margin-bottom: 22px;
 }
-.actionbtn{
-    width: 230px;
+.actionbtn {
+  width: 230px;
 }
 .actionImg img {
   border-radius: 35px;
+}
+/* productive-user  */
+.productiveSection {
+  display: flex;
+  height: 310px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  background-color: rgba(78, 71, 255, 0.1);
+}
+.productiveheading {
+  font-size: 2.1rem;
+  font-weight: bold;
+
+  color: #252432;
+}
+.usersNumber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 850px;
+}
+.item-1 h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #4e47ff;
+  text-align: center;
+}
+.item-1 p {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #252432;
+  text-align: center;
+}
+/* users-feedback */
+.usersFeedbackHeading{
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.feedbackCardWrapper{
+    margin-bottom: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.feedbackCard{
+    background-color: #ffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    width: 365px;
+    height: 240px;
+    
+}
+.feedbackItem h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+.feedbackItem p{
+    font-size: .7rem;
+    font-weight: normal;
+    color: #1E1E1E;
+    margin-bottom: 9px;
+}
+.nameandDateWrapper{
+    display: flex;
+    gap: 10px;
+}
+.feedbackPersonName{
+    color: #757575;
+}
+/* user-feedback-ends-here */
+.freeTemplate{
+    height: 695px;
+    border-radius: 15px;
+    background-color: #ffff;
+    margin-bottom: 95px;
 }
