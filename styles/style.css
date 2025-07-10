@@ -5,7 +5,7 @@
 }
 body {
   margin: 0 auto;
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 /* common-style  */
 .btnStyle {
@@ -63,5 +63,36 @@ body {
   color: #252432;
   text-align: center;
   margin-bottom: 37px;
-  font-family: "Raleway", sans-serif
+  font-family: "Raleway", sans-serif;
+}
+/* sction-section */
+.actionSection {
+  max-width: 1140px;
+  margin: 0 auto;
+  max-height: 330px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 115px;
+}
+.actionHeading {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.actionTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  justify-content: center;
+  width: 455px;
+}
+.actionHeading p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 22px;
+}
+.actionbtn{
+    width: 230px;
+}
+.actionImg img {
+  border-radius: 35px;
 }
