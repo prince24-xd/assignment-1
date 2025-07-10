@@ -231,14 +231,19 @@ main {
 .userinputForm input {
   border: none;
   background-color: #ffff;
-  padding: 20px 0 20px 30px;
-  font-size: 1.1rem;
+  padding: 15px 0 15px 20px;
+  font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #f2eded;
 }
 #message {
-  height: 135px;
-  padding: 20px 250px 85px 30px;
+  border: none;
+  background-color: #ffff;
+  padding: 15px 0 15px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #f2eded;
 }
 /* footer  */
 .footerSection {
