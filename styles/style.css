@@ -6,12 +6,12 @@
 body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  background-color: #F2EDED;
+  background-color: #f2eded;
 }
 main {
   max-width: 1140px;
   margin: 0 auto;
-  background-color: #F2EDED;
+  background-color: #f2eded;
 }
 /* common-style  */
 .btnStyle {
@@ -21,16 +21,22 @@ main {
   color: #ffff;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.btnStyle a {
-  color: #ffff;
-  text-decoration: none;
+
+.btnStyle:hover {
+  background-color: rgba(78, 71, 255, 0.5);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
+
 /* all-style */
+/* header  */
 .headerContainer {
   background-image: url("../Assets/Hero-bg.png");
   height: 690px;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 110px;
 }
 .navContainer {
@@ -71,7 +77,7 @@ main {
   margin-bottom: 37px;
   font-family: "Raleway", sans-serif;
 }
-/* sction-section */
+/* action-section */
 .actionSection {
   max-height: 330px;
   display: flex;
@@ -79,7 +85,7 @@ main {
   margin-bottom: 115px;
 }
 .actionHeading {
-  font-size: 2.2rem;
+  font-size: 3.2rem;
   font-weight: bold;
 }
 .actionTextarea {
@@ -115,7 +121,6 @@ main {
 .productiveheading {
   font-size: 2.1rem;
   font-weight: bold;
-
   color: #252432;
 }
 .usersNumber {
@@ -137,52 +142,140 @@ main {
   text-align: center;
 }
 /* users-feedback */
-.usersFeedbackHeading{
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 50px;
+.usersFeedbackHeading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
-.feedbackCardWrapper{
-    margin-bottom: 135px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.feedbackCardWrapper {
+  margin-bottom: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.feedbackCard{
-    background-color: #ffff;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 24px;
-    width: 365px;
-    height: 240px;
-    
+.feedbackCard {
+  background-color: #ffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  width: 365px;
+  height: 240px;
 }
-.feedbackItem h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #1E1E1E;
+.feedbackItem h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e1e;
 }
-.feedbackItem p{
-    font-size: .7rem;
-    font-weight: normal;
-    color: #1E1E1E;
-    margin-bottom: 9px;
+.feedbackItem p {
+  font-size: 0.7rem;
+  font-weight: normal;
+  color: #1e1e1e;
+  margin-bottom: 9px;
 }
-.nameandDateWrapper{
-    display: flex;
-    gap: 10px;
+.nameandDateWrapper {
+  display: flex;
+  gap: 10px;
 }
-.feedbackPersonName{
-    color: #757575;
+.nameandDateWrapper img {
+  border-radius: 50%;
+}
+.feedbackPersonName {
+  color: #757575;
 }
 /* user-feedback-ends-here */
-.freeTemplate{
-    height: 695px;
-    border-radius: 15px;
-    background-color: #ffff;
-    margin-bottom: 95px;
+/* free-template  */
+.freeTemplate {
+  height: 695px;
+  border-radius: 15px;
+  background-color: #ffff;
+  margin-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 70px 150px;
+}
+.freeTemplateText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.freeTemplateText h1 {
+  font-size: 3.1rem;
+}
+.freeTemplateimg img {
+  border-radius: 40px;
+}
+/* user-input */
+.userinputwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px 0;
+}
+.leftTextArea {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.userinputForm {
+  width: 497px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.userinputForm input {
+  border: none;
+  background-color: #ffff;
+  padding: 20px 0 20px 30px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  border: 1px solid #f2eded;
+}
+#message {
+  height: 135px;
+  padding: 20px 250px 85px 30px;
+}
+/* footer  */
+.footerSection {
+  width: 100vw;
+  padding: 105px 450px;
+  min-height: 425px;
+  background-color: #ffff;
+}
+.footrLogoSubtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.footerLogo {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #4e47ff;
+}
+.footerPara {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #8987a1;
+  text-align: center;
+}
+.footerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  margin-top: 20px;
+}
+.footerNav li {
+  list-style: none;
+}
+.footerNav li a {
+  text-decoration: none;
+  color: #8987a1;
+  font-size: 1rem;
 }
